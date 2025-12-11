@@ -62,7 +62,11 @@ function Form() {
     e.preventDefault();
     console.log("Form Submitted:", form);
     alert("Form Submitted Successfully!");
+    
+   // ✅ Save form data to localStorage
+    localStorage.setItem("reactFormData", JSON.stringify(form));
   };
+
 
   // Reset form
   const handleReset = () => {

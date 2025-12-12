@@ -122,9 +122,9 @@ function Form() {
           onChange={handleChange}
           placeholder="Enter Mobile Number"
         />
-
+      <div className="inline">    
         <label>Gender*</label>
-        <div className="inline">
+        
           <label>
             <input type="radio" name="gender" value="Male" onChange={handleChange} /> Male
           </label>
@@ -137,9 +137,9 @@ function Form() {
             <input type="radio" name="gender" value="Other" onChange={handleChange} /> Other
           </label>
         </div>
-
-        <label>Your Best Subject*</label>
-        <div className="inline">
+          <div className="inline">
+        <label> Subject*</label>
+        
           <label>
             <input type="checkbox" value="English" onChange={handleCheckbox} /> English
           </label>
@@ -152,7 +152,7 @@ function Form() {
             <input type="checkbox" value="Physics" onChange={handleCheckbox} /> Physics
           </label>
         </div>
-
+    
         <label>Upload Resume*</label>
         <input type="file" onChange={handleFile} />
 
@@ -163,7 +163,7 @@ function Form() {
           onChange={handleChange}
           placeholder="Enter URL"
         />
-
+        
         <label>Select Your Choice</label>
         <select name="choice" value={form.choice} onChange={handleChange}>
           <option value="">Select your answer</option>
